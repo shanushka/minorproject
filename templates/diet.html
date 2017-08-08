@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <title>DietChart</title>
+
+
+
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card-2" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">My Dietician</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="/" class="w3-bar-item w3-button">Home</a>
+
+    </div>
+  </div>
+</div>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+ <img class="mySlides w3-animate-fading" src="{{ url_for('static', filename='images/thali3.jpg') }}" style="margin:auto">
+  <img class="mySlides w3-animate-fading" src="{{ url_for('static', filename='images/thali1.jpg') }}" style="margin:auto">
+  <img class="mySlides w3-animate-fading" src="{{ url_for('static', filename='images/thali.jpg') }}" style="margin:auto">
+<style>
+    table, td, th {
+    border: 1px solid black;padding: 30px; background-color: #f1f1c1;
+}
+</style>
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 9000);
+}
+</script>
+
+
+     <h1 style ="color:#1abc9c;font-family:verdana" >Your diet chart</h1>
+    <table class="Diet Menu">
+        <tbody>
+        <tr>
+            <td>Breakfast</td>
+            <td>{{food[0]}}</td>
+        </tr>
+
+        <tr>
+            <td>Lunch</td>
+            <td>{{food[1]}}</td>
+        </tr>
+
+
+        <tr>
+            <td>Snacks</td>
+            <td>{{food[2]}}</td>
+        </tr>
+
+
+        <tr>
+            <td>Snacks</td>
+            <td>{{food[3]}}</td>
+        </tr>
+
+        </tbody>
+        </table>
+</body>
+</html>

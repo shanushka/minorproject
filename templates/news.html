@@ -1,0 +1,121 @@
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="/">Home</a></li>
+
+   <li><a href="#news">Recipe</a></li>
+  <li><a href="/contactus">Contact Us</a></li>
+  <li style="float:right"><a class="active" href="about us.html">About Us</a></li>
+</ul>
+
+</body>
+
+<head>
+<style>
+body {
+    background-image: url("{{ url_for('static', filename='images/pic1.jpg') }}");
+    background-repeat:repeat;
+}
+</style>
+</head>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+
+<div class="w3-content" style="width: 100%">
+  <div class="mySlides w3-container w3-blue">
+    <h1><b>Diet facts:</b></h1>
+    <h1><i>Omega-3 Fats Are Crucial and Most People Don't Get Enough.</i></h1>
+  </div>
+
+
+<div class="w3-content" style="width:100%">
+  <div class="mySlides w3-container w3-grey">
+    <h1><b>Diet facts:</b></h1>
+    <h1><i>Artificial Trans Fats Are Very Unhealthy and Should be Avoided.</i></h1>
+  </div>
+ 
+ <div class="w3-content" style="width:100%">
+  <div class="mySlides w3-container w3-green">
+    <h1><b>Diet facts:</b></h1>
+    <h1><i>It is Critical to Avoid a Vitamin D Deficiency and should be part of your Diet.</i></h1>
+  </div>
+ 
+ <div class="w3-content" style="width:100%">
+  <div class="mySlides w3-container w3-pink">
+    <h1><b>Diet facts:</b></h1>
+    <h1><i>Refined Carbohydrates Are Bad For You and should be avoided as much as possible.</i></h1>
+  </div>
+ 
+ <div class="w3-content" style="width:100%">
+  <div class="mySlides w3-container w3-red">
+    <h1><b>Diet facts:</b></h1>
+    <h1><i>Supplements Can Never Fully Replace Real Foods, So balancing your food is very important.</i></h1>
+  </div>
+
+  </div>
+<script>
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 5000);
+
+}
+</script>
+
+
+
+</body>
+<body>
+<img src="{{ url_for('static', filename='images/board.jpg') }}" style="width:100%">
+</body>
+</html>
+

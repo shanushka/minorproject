@@ -1,0 +1,288 @@
+
+<html>
+
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+
+<body>
+
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="/news">News</a></li>
+   <li><a href="/recipe">Recipe</a></li>
+  <li><a href="/contactus">Contact Us</a></li>
+  <li style="float:right"><a class="active" href="/aboutus">About Us</a></li>
+</ul>
+
+</body>
+
+			<div class="body">
+				<div id="content">
+					<div>
+						<div>
+							<h3><b>Featured Recipe of the month:Chana Ko Tarkari</b></h3>
+							<h4><i>Ready Time:50mins</i></h4>
+						
+							<a href="index.html"><img src="{{ url_for('static', filename='images/recipe.jpg') }}" style="width:90%" alt="Image"></a>
+							<h5>INGREDIENTS</h5>
+							<ol class="ingredients">
+								<li>
+									3 (400 g) cans organic garbanzo beans, <br>drained (chickpeas)
+								</li>
+								<li>
+									1 large onion, chopped
+								</li>
+								<li>
+									3 roma tomatoes, coarsely chopped
+
+								</li>
+								<li>
+									2 dried red chilies
+								</li>
+								<li>
+									2 tablespoons finely minced ginger and garlic
+								</li>
+								<li>
+									2 tablespoons curry powder
+								</li>
+								<li>
+									1 teaspoon turmeric
+								</li>
+								<li>
+									2 tablespoons vegetable oil
+
+								</li>
+								<li>
+									chopped cilantro and red onion (to garnish)
+								</li>
+							</ol>
+							<h5>DIRECTIONS</h5>
+							<ol class="directions">
+								<li>
+									Heat oil in wok or large pot.
+								</li>
+								<li>
+									Fry red chills for a few seconds until almost black (make sure they don't burn).
+								</li>
+								<li>
+									Add onion and stir for about 3 minutes.
+								</li>
+								
+								<li>
+									Add garlic and ginger, stir for about 1 minute.
+								</li>
+								<li>
+									Then add curry powder and turmeric and stir for another minute.
+								</li>
+									
+									<li>
+									Add garbanzo beans (chickpeas), stir, and add in water.
+								</li>
+								<li>
+									Cover and cook for 10-15 minutes over medium heat.
+								</li>
+								<li>
+									Add tomatoes and cook for 5 minutes.
+								</li>
+								<li>
+								Garnish with cilantro and red onion and serve.
+								</li>
+							
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			
+		
+	
+</body>
+</html>
+<style>
+
+body {
+	background: url({{ url_for('static', filename='images/pic1.jpg') }}) repeat;
+	color: #6c5b37;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	min-width: 960px;
+	padding: 0;
+}
+
+div.body {
+	margin: 20px auto 0;
+	overflow: hidden;
+	width: 1060px;
+}
+div.body div:first-child {
+	float: left;
+	height: auto;
+	margin: 5px 0 0;
+	width: 800px;
+}
+
+
+
+
+
+div.body div div h3,
+div.body div div h4 {
+	color: #850028;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	letter-spacing: 0.05em;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+div.body div div h4 {
+	margin: 30px 0 5px;
+	text-transform: none;
+}
+div.body div div h4:first-child {
+	margin: 0 0 5px;
+	padding: 7px 0 0;
+}
+div.body div div span {
+	color: #6c5b37;
+	display: block;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 0.025em;
+	line-height: 24px;
+	margin: 2px 0 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+}
+div.body div#content {
+	background: url(../images/bg-content-top.jpg) no-repeat center top;
+	border-radius: 0;
+	height: auto;
+	margin: 0 0 0 3px;
+	padding: 2px 0 0;
+	width: 710px;
+}
+div.body div#content div {
+	background:  #f0ece3 url(../images/bg-content-bottom.gif) no-repeat center bottom;
+	border-radius: 0;
+	height: auto;
+	padding: 13px 0 36px;
+	width: 710px;
+}
+div.body div#content div div {
+	background: none;
+	padding: 0 25px;
+	width: auto;
+}
+div.body div#content div div p {
+	padding: 0;
+}
+div.body div#content div div ol.directions {
+	margin: 0;
+	padding: 0 0 0 20px;
+}
+div.body div#content div div ol.directions li {
+	line-height: 24px;
+}
+div.body div#content div div h3 {
+	padding: 7px 0 0;
+	text-transform: none;
+}
+div.body div#content div div h5 {
+	font-size: 14px;
+	line-height: 24px;
+	margin: 0 0 10px;
+}
+div.body div#content div div ol.ingredients {
+	list-style: none;
+	margin: 0 0 20px;
+	overflow: hidden;
+	padding: 0; 
+}
+div.body div#content div div ol.ingredients li {
+	color: #6C5B37;
+	float: left;
+	line-height: 24px;
+	padding: 0;
+	width: 300px; 
+}
+div.body div#content div div img {
+	margin: 20px  0;
+}
+div.body div#content div div ul {
+	margin: 0 0 20px;
+	padding: 0;
+}
+div.body div#content div div ul li {
+	background: none;
+	border: 0;
+	color: #6C5B37;
+	float: none;
+	height: auto;
+	margin: 0;
+	padding: 0 0 30px;
+	width: auto;
+}
+div.body div#content div div ul li p {
+	line-height: 27px;
+}
+div.body div#content div div ul li a img {
+	margin: 5px 0 10px;
+}
+div.body div#content div p,
+div.body div#content div ul li {
+	padding: 0 25px;
+}
+div.body div#content div ul {
+	background: none;
+	height: auto;
+	padding: 20px 0 0;
+}
+div.body div#content div ul li {
+	background: #fdfcef;
+	border-bottom: 1px solid #FCDA55;
+	border-top: 1px solid #FCDA55;
+	float: none;
+	height: 191px;
+	margin: 23px 0 0;
+	width: 660px;
+}
+
+
+
+</style>

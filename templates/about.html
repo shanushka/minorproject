@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<title>About Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card-2" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">My Dietician</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="/" class="w3-bar-item w3-button">Home</a>
+      <a href="/contactus" class="w3-bar-item w3-button">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="pulau.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">About Us</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="{{ url_for('static', filename='images/item.jpg') }}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About My Dietician</h1><br>
+   
+      <p class="w3-large">My Dietician is an expert system in dietetics; that is, human nutrition and the regulation of proper diet. It provides user’s nutrition based upon the information that they provide. The system asks data from the user and processes it to provide the diet plan to the user. Thus, the user does not need to visit any dietician which also saves time and the user can get the required diet plan in just a click. The project has a login page where the user has to register and give some information such as its body type, weight, height, metabolism and working hour details and accordingly the app provides menu to the user. The processes depend on some metrics already known to the application on the basis of which a diet plan is generated <span class="w3-tag w3-light-grey"></span>.</p>
+      
+    </div>
+  </div>
+  
+  <hr>
+  
+  
+ 
+  
+
+</body>
+</html>
